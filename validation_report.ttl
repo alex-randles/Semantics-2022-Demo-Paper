@@ -1,0 +1,19 @@
+@prefix ex: <http://example.org/> .
+@prefix mqv: <https://alex-randles.github.io/MQV/#> .
+@prefix mqv-metric: <https://alex-randles.github.io/MQV-METRICS/#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:mappingQualityAssessment a mqv:MappingAssessment ;
+    mqv:assessedMapping <prometheus_mapping.ttl> .
+
+ex:mappingValidationReport-1656517124 a mqv:MappingValidationReport ;
+    rdfs:comment "A timestamp is appended to the validation report IRI for uniqueness." ;
+.
+
+<prometheus_mapping.ttl> a mqv:MappingDocument .
+
+
+
+
+

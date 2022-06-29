@@ -1,0 +1,455 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ex: <http://www.example.com/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+
+<#MetricReadings>
+    rr:logicalTable [ rr:tableName "METRIC_READINGS"; ];
+
+    rr:subjectMap [
+                      rr:template "http://data.example.com/metricReading/{METRIC_ID}";
+                      rr:class ex:MetricReading;
+                  ];
+
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasName;
+                              rr:objectMap [ rr:column "__NAME__" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasAddress;
+                              rr:objectMap [ rr:column "ADDRESS" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasAlertmanager;
+                              rr:objectMap [ rr:column "ALERTMANAGER" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasAlertname;
+                              rr:objectMap [ rr:column "ALERTNAME" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasAlertstate;
+                              rr:objectMap [ rr:column "ALERTSTATE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasBiosDate;
+                              rr:objectMap [ rr:column "BIOS_DATE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasBiosVendor;
+                              rr:objectMap [ rr:column "BIOS_VENDOR" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasBiosVersion;
+                              rr:objectMap [ rr:column "BIOS_VERSION" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasBoardName;
+                              rr:objectMap [ rr:column "BOARD_NAME" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasBoardVendor;
+                              rr:objectMap [ rr:column "BOARD_VENDOR" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasBoardVersion;
+                              rr:objectMap [ rr:column "BOARD_VERSION" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasBranch;
+                              rr:objectMap [ rr:column "BRANCH" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasBroadcast;
+                              rr:objectMap [ rr:column "BROADCAST" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasCall;
+                              rr:objectMap [ rr:column "CALL" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasCapacityLevel;
+                              rr:objectMap [ rr:column "CAPACITY_LEVEL" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasCause;
+                              rr:objectMap [ rr:column "CAUSE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasChassisVendor;
+                              rr:objectMap [ rr:column "CHASSIS_VENDOR" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasChip;
+                              rr:objectMap [ rr:column "CHIP" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasChipName;
+                              rr:objectMap [ rr:column "CHIP_NAME" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasClocksource;
+                              rr:objectMap [ rr:column "CLOCKSOURCE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasCode;
+                              rr:objectMap [ rr:column "CODE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasCollector;
+                              rr:objectMap [ rr:column "COLLECTOR" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasConfig;
+                              rr:objectMap [ rr:column "CONFIG" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasCore;
+                              rr:objectMap [ rr:column "CORE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasCPU;
+                              rr:objectMap [ rr:column "CPU" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasDevice;
+                              rr:objectMap [ rr:column "DEVICE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasDialerName;
+                              rr:objectMap [ rr:column "DIALER_NAME" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasDomainname;
+                              rr:objectMap [ rr:column "DOMAINNAME" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasDuplex;
+                              rr:objectMap [ rr:column "DUPLEX" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasEndpoint;
+                              rr:objectMap [ rr:column "ENDPOINT" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasEvent;
+                              rr:objectMap [ rr:column "EVENT" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasFirmwareRevision;
+                              rr:objectMap [ rr:column "FIRMWARE_REVISION" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasFstype;
+                              rr:objectMap [ rr:column "FSTYPE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasGoversion;
+                              rr:objectMap [ rr:column "GOVERSION" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasHandler;
+                              rr:objectMap [ rr:column "HANDLER" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasId;
+                              rr:objectMap [ rr:column "ID" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasIdLike;
+                              rr:objectMap [ rr:column "ID_LIKE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasIndex;
+                              rr:objectMap [ rr:column "INDEX" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasInstance;
+                              rr:objectMap [ rr:column "INSTANCE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasInterval;
+                              rr:objectMap [ rr:column "INTERVAL" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasIp;
+                              rr:objectMap [ rr:column "IP" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasJob;
+                              rr:objectMap [ rr:column "JOB" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasLabel;
+                              rr:objectMap [ rr:column "LABEL" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasLe;
+                              rr:objectMap [ rr:column "LE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasListenerName;
+                              rr:objectMap [ rr:column "LISTENER_NAME" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasMachine;
+                              rr:objectMap [ rr:column "MACHINE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasMajor;
+                              rr:objectMap [ rr:column "MAJOR" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasManufacturer;
+                              rr:objectMap [ rr:column "MANUFACTURER" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasMinor;
+                              rr:objectMap [ rr:column "MINOR" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasMode;
+                              rr:objectMap [ rr:column "MODE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasModel;
+                              rr:objectMap [ rr:column "MODEL" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasModelName;
+                              rr:objectMap [ rr:column "MODEL_NAME" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasMountpoint;
+                              rr:objectMap [ rr:column "MOUNTPOINT" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasName;
+                              rr:objectMap [ rr:column "NAME" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasNodename;
+                              rr:objectMap [ rr:column "NODENAME" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasOperstate;
+                              rr:objectMap [ rr:column "OPERSTATE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasPackage;
+                              rr:objectMap [ rr:column "PACKAGE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasPath;
+                              rr:objectMap [ rr:column "PATH" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasPowerSupply;
+                              rr:objectMap [ rr:column "POWER_SUPPLY" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasPrettyName;
+                              rr:objectMap [ rr:column "PRETTY_NAME" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasProductFamily;
+                              rr:objectMap [ rr:column "PRODUCT_FAMILY" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasProductName;
+                              rr:objectMap [ rr:column "PRODUCT_NAME" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasQuantile;
+                              rr:objectMap [ rr:column "QUANTILE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasQueue;
+                              rr:objectMap [ rr:column "QUEUE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasReason;
+                              rr:objectMap [ rr:column "REASON" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasRelease;
+                              rr:objectMap [ rr:column "RELEASE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasRevision;
+                              rr:objectMap [ rr:column "REVISION" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasRole;
+                              rr:objectMap [ rr:column "ROLE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasRuleGroup;
+                              rr:objectMap [ rr:column "RULE_GROUP" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasScrapeJob;
+                              rr:objectMap [ rr:column "SCRAPE_JOB" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasSensor;
+                              rr:objectMap [ rr:column "SENSOR" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasSerial;
+                              rr:objectMap [ rr:column "SERIAL" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasSerialNumber;
+                              rr:objectMap [ rr:column "SERIAL_NUMBER" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasSlice;
+                              rr:objectMap [ rr:column "SLICE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasState;
+                              rr:objectMap [ rr:column "STATE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasStatus;
+                              rr:objectMap [ rr:column "STATUS" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasSysname;
+                              rr:objectMap [ rr:column "SYSNAME" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasSystemVendor;
+                              rr:objectMap [ rr:column "SYSTEM_VENDOR" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasTechnology;
+                              rr:objectMap [ rr:column "TECHNOLOGY" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasTimeZone;
+                              rr:objectMap [ rr:column "TIME_ZONE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasType;
+                              rr:objectMap [ rr:column "TYPE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasVersion;
+                              rr:objectMap [ rr:column "VERSION" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasVersionCodename;
+                              rr:objectMap [ rr:column "VERSION_CODENAME" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasVersionId;
+                              rr:objectMap [ rr:column "VERSION_ID" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasZone;
+                              rr:objectMap [ rr:column "ZONE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasValue;
+                              rr:objectMap [ rr:column "VALUE" ];
+                          ];
+
+    rr:predicateObjectMap [
+                              rr:predicate ex:hasTimestamp;
+                              rr:objectMap [ rr:column "TIMESTAMP" ];
+                          ];
+
+
+
+.
