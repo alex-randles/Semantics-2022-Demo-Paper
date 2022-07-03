@@ -16,7 +16,6 @@
     rr:subjectMap [
                       rr:template "http://data.example.com/metric/{METRIC_ID}";
                       rr:class pmo:Metric;
-                      rr:graph ex:CpuUsage; 
                   ];
 
 
@@ -470,7 +469,6 @@
     rr:subjectMap [
                       rr:template "http://data.example.com/metricResultSet/{METRIC_ID}";
                       rr:class pmo:MetricResultSet;
-                      rr:graph ex:CpuUsage; 
                   ];
     
       rr:predicateObjectMap [
@@ -490,7 +488,6 @@
     rr:subjectMap [
                       rr:template "http://data.example.com/metricResult/{METRIC_ID}";
                       rr:class pmo:MetricResult;
-                      rr:graph ex:CpuUsage; 
                   ];
     rr:predicateObjectMap [
                               rr:predicate pmo:hasValue;
@@ -513,7 +510,6 @@
     rr:subjectMap [
                       rr:template "http://data.example.com/metricQuery/{ID}";
                       rr:class pmo:MetricQuery;
-                      rr:graph ex:CpuUsage; 
                   ];
 
 
